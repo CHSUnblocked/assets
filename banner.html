@@ -29,6 +29,18 @@
     height: 200px;
     background-color: #222;
   }
+  button {
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    font-size: 25px;
+  }
 </style>
 
 <video
@@ -36,9 +48,43 @@
   autoplay
   muted
   loop
-  src="https://chsunblocked.github.io/assets/banner.mp4"
+  src="banner.mp4"
 ></video>
 
+<button data-canny-changelog>What's New</button>
+<script>
+  !(function (w, d, i, s) {
+    function l() {
+      if (!d.getElementById(i)) {
+        var f = d.getElementsByTagName(s)[0],
+          e = d.createElement(s);
+        (e.type = "text/javascript"),
+          (e.async = !0),
+          (e.src = "https://canny.io/sdk.js"),
+          f.parentNode.insertBefore(e, f);
+      }
+    }
+    if ("function" != typeof w.Canny) {
+      var c = function () {
+        c.q.push(arguments);
+      };
+      (c.q = []),
+        (w.Canny = c),
+        "complete" === d.readyState
+          ? l()
+          : w.attachEvent
+          ? w.attachEvent("onload", l)
+          : w.addEventListener("load", l, !1);
+    }
+  })(window, document, "canny-jssdk", "script");
+
+Canny("initChangelog", {
+  appID: "6507d106682dfb09dd9439d6",
+  position: "bottom",
+  align: "left",
+  theme: "light", // options: light [default], dark, auto
+});
+</script>
 <div class="image-container">
 <svg id="ezRjQmn5Hek1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path id="ezRjQmn5Hek2" d="M256,44.11215c117.02243,0,211.88785,94.86542,211.88785,211.88785h-88.9573c0-67.89255-55.03788-122.93034-122.93055-122.93034s-122.93055,55.03779-122.93055,122.93034h-88.9573C44.11215,138.97757,138.97757,44.11215,256,44.11215Z" transform="matrix(.955877 0 0 0.955877 11.295488 469.83421)" fill="#1fa0db" stroke-width="0"/><path id="ezRjQmn5Hek3" d="M256,44.11215c117.02243,0,211.88785,94.86542,211.88785,211.88785h-88.9573c0-67.89255-55.03788-122.93034-122.93055-122.93034s-122.93055,55.03779-122.93055,122.93034h-88.9573C44.11215,138.97757,138.97757,44.11215,256,44.11215Z" transform="matrix(.955877 0 0 0.955877 11.295488 469.83421)" fill="#1fa0db" stroke-width="0"/><path id="ezRjQmn5Hek4" d="M256,44.11215c117.02243,0,211.88785,94.86542,211.88785,211.88785h-88.9573c0-67.89255-55.03788-122.93034-122.93055-122.93034s-122.93055,55.03779-122.93055,122.93034h-88.9573C44.11215,138.97757,138.97757,44.11215,256,44.11215Z" transform="matrix(-.955877 0 0-.955877 500.70451 959.243232)" fill="#f6ac3f" stroke-width="0"/><rect id="ezRjQmn5Hek5" width="63.223958" height="0" rx="0" ry="0" transform="matrix(.963312 0 0-1.00464 183.276036 256.672317)" fill="#f6ac3f" stroke-width="0"/><rect id="ezRjQmn5Hek6" width="63.223958" height="0" rx="0" ry="0" transform="matrix(.963312 0 0-1.00464 412.18443 256.672317)" fill="#f6ac3f" stroke-width="0"/>
 <script><![CDATA[
